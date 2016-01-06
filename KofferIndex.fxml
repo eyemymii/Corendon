@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane id="AnchorPane" minHeight="720.0" minWidth="1028.0" prefHeight="720.0" prefWidth="1028.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="corendon.KlantenIndexController">
+  <children>
+    <Label fx:id="lblEmail" alignment="CENTER_RIGHT" layoutX="633.0" layoutY="14.0" prefHeight="42.0" prefWidth="381.0" text="Welcome, user" textAlignment="RIGHT">
+      <font>
+        <Font size="12.0" />
+      </font>
+    </Label>
+    <ToolBar layoutX="1.0" layoutY="64.0" prefWidth="1027.0" style="-fx-background-color:red;&#10;">
+      <items>
+        <Button fx:id="gaatNaarHome" mnemonicParsing="false" onAction="#gaNaarHome" style="-fx-background-color:white;" text="Home" />
+        <Button fx:id="gaatNaarKlanten" mnemonicParsing="false" onAction="#gaNaarKlanten" style="-fx-background-color:white;" text="Customers" />
+        <Button id="goToCases" fx:id="gaatNaarKoffers" mnemonicParsing="false" onAction="#gaNaarKoffers" style="-fx-background-color:white;" text="Cases" />
+        <Button fx:id="gaatNaarGebruikers" mnemonicParsing="false" onAction="#gaNaarIndexGebruikers" style="-fx-background-color:white;" text="Users" />
+        <Region prefHeight="21.0" prefWidth="616.0" style="-fx-background-color:red;" />
+        <Button fx:id="gaatNaarHelp" alignment="BASELINE_RIGHT" contentDisplay="TOP" mnemonicParsing="false" onAction="#gaNaarHelp" style="-fx-background-color:white;" text="Help" textAlignment="CENTER" />
+        <Button fx:id="logtUit" alignment="BASELINE_RIGHT" contentDisplay="TOP" mnemonicParsing="false" onAction="#logUit" style="-fx-background-color:white;" text="Log out" textAlignment="CENTER" />
+      </items>
+    </ToolBar>
+    <ImageView fitHeight="50.0" fitWidth="175.34246575342465" layoutX="24.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true">
+      <image>
+        <Image url="@../content/corendon.png" backgroundLoading="false" />
+      </image>
+    </ImageView>
+    <Button id="ToevoegenKlanten" fx:id="toevoegKlanten" layoutX="56.0" layoutY="148.0" mnemonicParsing="false" onAction="#toevoegenKlanten" text="Add Customers" />
+  </children>
+</AnchorPane>
