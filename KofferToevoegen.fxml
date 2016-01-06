@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane id="AnchorPane" minHeight="720.0" minWidth="1028.0" prefHeight="720.0" prefWidth="1028.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="corendon.KlantenToevoegenController">
+  <children>
+    <Label fx:id="lblEmail" alignment="CENTER_RIGHT" layoutX="633.0" layoutY="14.0" prefHeight="42.0" prefWidth="381.0" text="Welcome, user" textAlignment="RIGHT">
+      <font>
+        <Font size="12.0" />
+      </font>
+    </Label>
+    <ToolBar layoutX="1.0" layoutY="64.0" prefWidth="1027.0" style="-fx-background-color:red;&#10;">
+      <items>
+        <Button fx:id="gaatNaarHome" mnemonicParsing="false" onAction="#gaNaarHome" style="-fx-background-color:white;" text="Home" />
+        <Button fx:id="gaatNaarKlanten" mnemonicParsing="false" onAction="#gaNaarKlanten" style="-fx-background-color:white;" text="Customers" />
+        <Button id="goToCases" fx:id="gaatNaarKoffers" mnemonicParsing="false" onAction="#gaNaarKoffers" style="-fx-background-color:white;" text="Cases" />
+        <Button fx:id="gaatNaarGebruikers" mnemonicParsing="false" onAction="#gaNaarIndexGebruikers" style="-fx-background-color:white;" text="Users" />
+        <Region prefHeight="21.0" prefWidth="616.0" style="-fx-background-color:red;" />
+        <Button fx:id="gaatNaarHelp" alignment="BASELINE_RIGHT" contentDisplay="TOP" mnemonicParsing="false" onAction="#gaNaarHelp" style="-fx-background-color:white;" text="Help" textAlignment="CENTER" />
+        <Button fx:id="logtUit" alignment="BASELINE_RIGHT" contentDisplay="TOP" mnemonicParsing="false" onAction="#logUit" style="-fx-background-color:white;" text="Log out" textAlignment="CENTER" />
+      </items>
+    </ToolBar>
+    <ImageView fitHeight="50.0" fitWidth="175.34246575342465" layoutX="24.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true">
+      <image>
+        <Image url="@../content/corendon.png" backgroundLoading="false" />
+      </image>
+    </ImageView>
+    <Label alignment="CENTER_RIGHT" layoutX="120.0" layoutY="220.0" prefHeight="-1.0" prefWidth="-1.0" text="Surname:" />
+    <Label alignment="CENTER_RIGHT" layoutX="120.0" layoutY="250.0" prefHeight="-1.0" prefWidth="-1.0" text="Tel Number:" />
+    <Label alignment="CENTER_RIGHT" layoutX="120.0" layoutY="280.0" prefHeight="-1.0" prefWidth="-1.0" text="E-mail:" />
+    <Label alignment="CENTER_RIGHT" layoutX="120.0" layoutY="310.0" prefHeight="-1.0" prefWidth="-1.0" text="Adress:" />
+    <Label alignment="CENTER_RIGHT" layoutX="120.0" layoutY="190.0" prefHeight="-1.0" prefWidth="-1.0" text="First Letter:" />
+    <Label alignment="CENTER_RIGHT" layoutX="120.0" layoutY="340.0" prefHeight="-1.0" prefWidth="-1.0" text="Zip-code:" />
+    <Label alignment="CENTER_RIGHT" layoutX="120.0" layoutY="370.0" prefHeight="-1.0" prefWidth="-1.0" text="City:" />
+    <TextField id="surnameTextField" fx:id="klantPostcode" layoutX="210.0" layoutY="338.0" maxHeight="22.0" maxWidth="150.0" minHeight="22.0" minWidth="150.0" />
+    <TextField id="telNumberTextField" fx:id="klantAdres" layoutX="210.0" layoutY="309.0" maxHeight="22.0" maxWidth="150.0" minHeight="22.0" minWidth="150.0" />
+    <TextField id="emailTextField" fx:id="klantEmail" layoutX="210.0" layoutY="280.0" maxHeight="22.0" maxWidth="150.0" minHeight="22.0" minWidth="150.0" />
+    <TextField id="adressTextField" fx:id="klantTel" layoutX="210.0" layoutY="250.0" maxHeight="22.0" maxWidth="150.0" minHeight="22.0" minWidth="150.0" />
+    <TextField id="zipCodeTextField" fx:id="klantAchternaam" layoutX="210.0" layoutY="220.0" maxHeight="22.0" maxWidth="150.0" minHeight="22.0" minWidth="150.0" />
+    <TextField id="cityTextField" fx:id="klantVoorletter" layoutX="210.0" layoutY="190.0" maxHeight="22.0" maxWidth="150.0" minHeight="22.0" minWidth="150.0" prefHeight="-1.0" prefWidth="-1.0" />
+    <TextField id="surnameTextField" fx:id="klantStad" layoutX="210.0" layoutY="370.0" maxHeight="22.0" maxWidth="150.0" minHeight="22.0" minWidth="150.0" />
+    <Button fx:id="voegKlantToe" layoutX="525.0" layoutY="368.0" mnemonicParsing="false" onAction="#toevoegenKlant" text="Add Customer" />
+    <Label fx:id="errorToevoegen" layoutX="470.0" layoutY="324.0" prefWidth="240.0" text="" textFill="RED" />
+  </children>
+</AnchorPane>
