@@ -22,9 +22,9 @@ import javafx.stage.Stage;
 /**
  * FXML Controller class
  *
- * @author Rene
+ * @author warie_000
  */
-public class KlantenIndexController implements Initializable {
+public class KofferIndexController implements Initializable {
     @FXML
     private Label lblEmail;
     @FXML
@@ -38,7 +38,10 @@ public class KlantenIndexController implements Initializable {
     @FXML
     private Button gaatNaarHelp;
     @FXML
-    private Button logtUit, toevoegKlanten;
+    private Button logtUit;
+    @FXML
+    private Button gaatNaarKofferToevoegen;
+
     /**
      * Initializes the controller class.
      */
@@ -70,19 +73,23 @@ public class KlantenIndexController implements Initializable {
     @FXML
     private void logUit(ActionEvent event) {
     }
-    
+
+/**
+* void gaNaarKofferToevoegen(ActionEvent event) Gaat naar de pagina om koffer toe te voegen. 
+* author Warisra
+* @param event Als het op de knop wordt gedrukt, wordt de actie geïnitialiseerd
+*/    
     @FXML
-    private void toevoegenKlanten(ActionEvent event) throws IOException {
-          ((Node) event.getSource()).getScene().getWindow().hide();             
+    private void gaNaarKofferToevoegen(ActionEvent event) throws IOException {
+        //close previous window
+            ((Node) event.getSource()).getScene().getWindow().hide();             
               
-                //load new screen
-                FXMLLoader loader = new FXMLLoader(getClass().getResource("/corendon/KlantenToevoegen.fxml"));
-                Stage stage = new Stage();
-                stage.setScene(new Scene((Pane) loader.load()));
-                stage.setTitle("Add Customer");
-                stage.show();
+            //load new screen
+            FXMLLoader loader = new FXMLLoader(getClass().getResource("/corendon/KofferToevoegen.fxml"));
+            Stage stage = new Stage();
+            stage.setScene(new Scene((Pane) loader.load()));
+            stage.setTitle("User");
+            stage.show();
     }
-    
-    
     
 }
