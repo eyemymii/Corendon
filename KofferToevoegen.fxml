@@ -31,21 +31,18 @@
         <Image url="@../content/corendon.png" backgroundLoading="false" />
       </image>
     </ImageView>
-    <Label alignment="CENTER_RIGHT" layoutX="120.0" layoutY="220.0" prefHeight="-1.0" prefWidth="-1.0" text="Surname:" />
-    <Label alignment="CENTER_RIGHT" layoutX="120.0" layoutY="250.0" prefHeight="-1.0" prefWidth="-1.0" text="Tel Number:" />
-    <Label alignment="CENTER_RIGHT" layoutX="120.0" layoutY="280.0" prefHeight="-1.0" prefWidth="-1.0" text="E-mail:" />
-    <Label alignment="CENTER_RIGHT" layoutX="120.0" layoutY="310.0" prefHeight="-1.0" prefWidth="-1.0" text="Adress:" />
-    <Label alignment="CENTER_RIGHT" layoutX="120.0" layoutY="190.0" prefHeight="-1.0" prefWidth="-1.0" text="First Letter:" />
-    <Label alignment="CENTER_RIGHT" layoutX="120.0" layoutY="340.0" prefHeight="-1.0" prefWidth="-1.0" text="Zip-code:" />
-    <Label alignment="CENTER_RIGHT" layoutX="120.0" layoutY="370.0" prefHeight="-1.0" prefWidth="-1.0" text="City:" />
-    <TextField id="surnameTextField" fx:id="klantPostcode" layoutX="210.0" layoutY="338.0" maxHeight="22.0" maxWidth="150.0" minHeight="22.0" minWidth="150.0" />
-    <TextField id="telNumberTextField" fx:id="klantAdres" layoutX="210.0" layoutY="309.0" maxHeight="22.0" maxWidth="150.0" minHeight="22.0" minWidth="150.0" />
-    <TextField id="emailTextField" fx:id="klantEmail" layoutX="210.0" layoutY="280.0" maxHeight="22.0" maxWidth="150.0" minHeight="22.0" minWidth="150.0" />
-    <TextField id="adressTextField" fx:id="klantTel" layoutX="210.0" layoutY="250.0" maxHeight="22.0" maxWidth="150.0" minHeight="22.0" minWidth="150.0" />
-    <TextField id="zipCodeTextField" fx:id="klantAchternaam" layoutX="210.0" layoutY="220.0" maxHeight="22.0" maxWidth="150.0" minHeight="22.0" minWidth="150.0" />
-    <TextField id="cityTextField" fx:id="klantVoorletter" layoutX="210.0" layoutY="190.0" maxHeight="22.0" maxWidth="150.0" minHeight="22.0" minWidth="150.0" prefHeight="-1.0" prefWidth="-1.0" />
-    <TextField id="surnameTextField" fx:id="klantStad" layoutX="210.0" layoutY="370.0" maxHeight="22.0" maxWidth="150.0" minHeight="22.0" minWidth="150.0" />
-    <Button fx:id="voegKlantToe" layoutX="525.0" layoutY="368.0" mnemonicParsing="false" onAction="#toevoegenKlant" text="Add Customer" />
+    <Label alignment="CENTER_RIGHT" layoutX="120.0" layoutY="220.0" prefHeight="-1.0" prefWidth="-1.0" text="Material*" />
+    <Label alignment="CENTER_RIGHT" layoutX="120.0" layoutY="250.0" prefHeight="-1.0" prefWidth="-1.0" text="Color*" />
+    <Label alignment="CENTER_RIGHT" layoutX="120.0" layoutY="280.0" prefHeight="-1.0" prefWidth="-1.0" text="Extra" />
+    <Label alignment="CENTER_RIGHT" layoutX="120.0" layoutY="190.0" prefHeight="-1.0" prefWidth="-1.0" text="Brand*" />
+    <TextField id="emailTextField" fx:id="overige" layoutX="210.0" layoutY="281.0" maxHeight="22.0" maxWidth="150.0" minHeight="22.0" minWidth="150.0" />
+    <TextField id="adressTextField" fx:id="kleur" layoutX="210.0" layoutY="250.0" maxHeight="22.0" maxWidth="150.0" minHeight="22.0" minWidth="150.0" />
+    <TextField id="zipCodeTextField" fx:id="materiaal" layoutX="210.0" layoutY="220.0" maxHeight="22.0" maxWidth="150.0" minHeight="22.0" minWidth="150.0" />
+    <TextField id="cityTextField" fx:id="merk" layoutX="210.0" layoutY="190.0" maxHeight="22.0" maxWidth="150.0" minHeight="22.0" minWidth="150.0" prefHeight="-1.0" prefWidth="-1.0" />
+    <Button id="voegKlantToe" fx:id="voegKofferToe" layoutX="525.0" layoutY="368.0" mnemonicParsing="false" onAction="#toevoegenKoffer" text="Add Case" />
     <Label fx:id="errorToevoegen" layoutX="470.0" layoutY="324.0" prefWidth="240.0" text="" textFill="RED" />
+    <Label layoutX="279.0" layoutY="159.0" text="* = required" />
+    <Label alignment="CENTER_RIGHT" layoutX="120.0" layoutY="313.0" prefHeight="-1.0" prefWidth="-1.0" text="Status*" />
+    <TextField id="emailTextField" layoutX="210.0" layoutY="313.0" maxHeight="22.0" maxWidth="150.0" minHeight="22.0" minWidth="150.0" />
   </children>
 </AnchorPane>
